@@ -3,6 +3,7 @@ fn main() {
         .file("rust/lib.c")
         .include("include")
         .flag("-O3")
+        .flag("-DSIMSIMD_NATIVE_F16=0")
         .warnings(false)
         .compile("simsimd");
 
